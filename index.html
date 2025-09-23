@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stay updated with the latest news and insights. Subscribe to our newsletter for curated articles." />
+  <title>NewsPulse</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<!-- Header -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Main Navigation" class="navbar">
+      <div class="logo">
+        <a href="/" aria-label="NewsPulse Home">NewsPulse</a>
+      </div>
+      <button class="menu-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+        ☰
+      </button>
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="#latest">Latest</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" role="region" aria-label="Featured Article">
+    <div class="hero-content">
+      <h1>Breaking: Major Tech Shift in Africa</h1>
+      <p>Explore how startups in Accra are redefining the future of fintech and AI.</p>
+      <a href="#" class="cta-button">Read More</a>
+    </div>
+  </section>
+
+  <!-- Newsletter Signup -->
+  <section id="subscribe" class="newsletter" role="form" aria-label="Newsletter Signup">
+    <h2>Stay Informed</h2>
+    <p>Subscribe to our newsletter for weekly updates.</p>
+    <form action="/subscribe" method="POST">
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" required aria-required="true" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <!-- Latest Articles Grid -->
+  <main role="main">
+    <section id="latest" class="articles" aria-label="Latest News">
+      <h2>Latest News</h2>
+      <div class="article-grid">
+        <article class="card">
+          <img src="img1.jpg" alt="Tech conference in Accra" />
+          <h3><a href="article1.html">Tech Leaders Gather in Accra</a></h3>
+          <p>Highlights from the annual innovation summit driving change across West Africa.</p>
+        </article>
+        <article class="card">
+          <img src="img2.jpg" alt="Solar panels on rooftops" />
+          <h3><a href="#">Green Tech Revolution</a></h3>
+          <p>How sustainable startups are powering Ghana’s future.</p>
+        </article>
+        <article class="card">
+          <img src="img3.jpg" alt="Mobile payment app interface" />
+          <h3><a href="#">Fintech for the People</a></h3>
+          <p>New apps are making financial services more accessible than ever.</p>
+        </article>
+         </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <section class="about">
+        <h3>About NewsPulse</h3>
+        <p>We deliver curated news and insights from across Africa’s tech landscape.</p>
+      </section>
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Email: info@newspulse.africa</p>
+        <p>Phone: +233 123 456 789</p>
+      </section>
+      <section class="social">
+        <h3>Follow Us</h3>
+        <ul class="social-icons">
+          <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+    <script src="main.js"></script>
+</body>
+</html>

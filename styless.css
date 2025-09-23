@@ -1,0 +1,70 @@
+/* Article Page Hero */
+.article-header {
+  background-image: url('img1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 1rem;
+  text-align: center;
+  color: var(--color-light);
+  position: relative;
+}
+
+.article-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(30, 61, 89, 0.7); /* Rich blue overlay */
+  z-index: 0;
+}
+
+.article-header h1,
+.article-header.meta {
+  position: relative;
+  z-index: 1;
+}
+
+.article-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-accent);
+}
+
+.article-header.meta {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-light);
+}
+
+/* Featured image (optional inline) */
+.featured-img {
+  display: none; /* Hidden since it's now used as background */
+}
+
+/* Article Body */
+.article-body {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--color-text);
+}
+
+.article-body p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Back Link */
+.article-footer {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.back-link {
+  color: var(--color-primary);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--color-accent);
+}
